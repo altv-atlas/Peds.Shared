@@ -15,11 +15,7 @@
 
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\"/>
+        <PackageReference Include="AltV.Atlas.Shared" Version="1.0.0" />
       <PackageReference Include="AltV.Net.Shared" Version="15.0.5" />
     </ItemGroup>
-    
-    <ItemGroup>
-      <ProjectReference Include="..\..\AltV.Atlas.Shared\AltV.Atlas.Shared.csproj" />
-    </ItemGroup>
-
 </Project>
