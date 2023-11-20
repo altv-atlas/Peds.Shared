@@ -13,5 +13,6 @@ public interface IPedTask
     /// </summary>
     Guid Id { get; set; }
 
-    void Execute( ISharedPed ped );
+    void OnStart( ISharedPed ped );
+    void OnStop( );
 }

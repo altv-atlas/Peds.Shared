@@ -8,9 +8,4 @@ namespace AltV.Atlas.Peds.Shared.Interfaces;
 public interface IAtlasPed : ISharedPed
 {
     IPedTask? CurrentTask { get; }
-    /// <summary>
-    /// Give the ped a specific task
-    /// </summary>
-    /// <param name="pedTask">The ped task</param>>
-    void SetPedTask<T>( T pedTask ) where T : class, IPedTask;
 }
