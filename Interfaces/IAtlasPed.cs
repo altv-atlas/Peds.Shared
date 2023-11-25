@@ -7,5 +7,8 @@ namespace AltV.Atlas.Peds.Shared.Interfaces;
 /// </summary>
 public interface IAtlasPed : ISharedPed
 {
+    /// <summary>
+    /// The task the ped is currently doing (eg wander, follow player, etc)
+    /// </summary>
     IPedTask? CurrentTask { get; }
 }
