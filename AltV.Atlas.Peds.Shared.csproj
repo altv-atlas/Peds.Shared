@@ -4,7 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>1.1.1</Version>
+        <Version>1.2.0</Version>
         <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/altv-atlas/Peds.Shared.git</RepositoryUrl>
@@ -15,7 +15,7 @@
 
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\"/>
-      <PackageReference Include="AltV.Net.Shared" Version="15.0.5" />
+      <PackageReference Include="AltV.Net.Shared" Version="15.0.6" />
     </ItemGroup>
     
     <ItemGroup Condition=" '$(Configuration)' != 'Debug' ">

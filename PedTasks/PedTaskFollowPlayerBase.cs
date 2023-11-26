@@ -1,6 +1,4 @@
-﻿
-using AltV.Atlas.Peds.Shared.Interfaces;
-using AltV.Atlas.Shared.Attributes;
+﻿using AltV.Atlas.Peds.Shared.Interfaces;
 using AltV.Net.Shared.Elements.Entities;
 
 namespace AltV.Atlas.Peds.Shared.PedTasks;
@@ -10,13 +8,6 @@ namespace AltV.Atlas.Peds.Shared.PedTasks;
 /// </summary>
 public abstract class PedTaskFollowPlayerBase : IPedTask
 {
-    private const string Identifier = "58E1B465-A689-47F7-98B3-D0F236E81052";
-    
-    /// <summary>
-    /// The ID of this task (Unique ID used on both client and server-side to identify the task)
-    /// </summary>
-    [Identifier( Identifier )]
-    public Guid Id { get; set; } = Guid.Parse( Identifier );
 
     /// <summary>
     /// The ID of the target player to follow
@@ -45,8 +36,9 @@ public abstract class PedTaskFollowPlayerBase : IPedTask
     /// <summary>
     /// Triggered when the ped stops the task. Unused on server-side
     /// </summary>
+    /// <param name="sharedPed"></param>
     /// <exception cref="NotImplementedException">throws this exception when not implemented on client-side</exception>
-    public virtual void OnStop( )
+    public virtual void OnStop( ISharedPed sharedPed )
     {
         throw new NotImplementedException( );
     }
